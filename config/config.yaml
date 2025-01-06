@@ -1,0 +1,22 @@
+data:
+  data_root: data/
+  data_list: data_list/
+  image_src: data/image/
+
+vae_pretrain:
+  in_dim: 33
+  epochs: 100
+  lr: 1e-4
+  ckpt_steps: 10
+  vis: vis/vae_pretrain/
+  ckpt: ckpt/vae_pretrain/
+  result: result/vae_pretrain/
+
+vae_poe:
+  in_dim: 33
+  epochs: 500
+  lr: 1e-4
+  ckpt_steps: 10
+  vis: vis/vae_poe/
+  ckpt: ckpt/vae_poe/
+  result: result/vae_poe/
